@@ -1,5 +1,6 @@
 package com.elmouttaki.elmehdi.person.Model;
 
+import com.elmouttaki.elmehdi.person.Enum.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,5 +34,5 @@ public class Person implements Serializable {
 
     private String familySituation;
 
-    private String role ;
+    private Role role ;
 }

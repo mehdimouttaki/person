@@ -2,7 +2,7 @@ package com.elmouttaki.elmehdi.person.Service.Impl;
 
 import com.elmouttaki.elmehdi.person.Dto.Request.PersonRequest;
 import com.elmouttaki.elmehdi.person.Dto.Response.PersonResponse;
-import com.elmouttaki.elmehdi.person.Dto.Response.PersonResponseMapper;
+import com.elmouttaki.elmehdi.person.Mapper.PersonResponseMapper;
 import com.elmouttaki.elmehdi.person.Mapper.PersonRequestMapper;
 import com.elmouttaki.elmehdi.person.Model.Person;
 import com.elmouttaki.elmehdi.person.Repository.PersonRepository;

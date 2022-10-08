@@ -1,5 +1,6 @@
 package com.elmouttaki.elmehdi.person.Dto.Request;
 
+import com.elmouttaki.elmehdi.person.Enum.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,5 +24,5 @@ public class PersonRequest {
 
     private String familySituation;
 
-    private String role ;
+    private Role role ;
 }
