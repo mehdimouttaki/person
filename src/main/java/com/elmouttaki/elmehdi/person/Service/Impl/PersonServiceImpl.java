@@ -9,6 +9,8 @@ import com.elmouttaki.elmehdi.person.Repository.PersonRepository;
 import com.elmouttaki.elmehdi.person.Service.PersonService;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class PersonServiceImpl implements PersonService {
     private  final  PersonRepository personRepository;
@@ -32,5 +34,10 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public PersonResponse findAll() {
         return (PersonResponse) personRepository.findAll();
+    }
+
+    @Override
+    public Optional<Person> findById(Long idPerson) {
+        return personRepository.findById(idPerson);
     }
 }
