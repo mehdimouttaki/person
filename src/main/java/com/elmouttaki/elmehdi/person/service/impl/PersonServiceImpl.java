@@ -2,6 +2,8 @@ package com.elmouttaki.elmehdi.person.service.impl;
 
 import com.elmouttaki.elmehdi.person.dto.request.PersonRequest;
 import com.elmouttaki.elmehdi.person.dto.response.PersonResponse;
+import com.elmouttaki.elmehdi.person.mapper.PersonRequestMapper;
+import com.elmouttaki.elmehdi.person.mapper.PersonResponseMapper;
 import com.elmouttaki.elmehdi.person.model.Person;
 import com.elmouttaki.elmehdi.person.repository.PersonRepository;
 import com.elmouttaki.elmehdi.person.service.PersonService;
@@ -13,23 +15,27 @@ import java.util.Optional;
 @Service
 public class PersonServiceImpl implements PersonService {
     private  final  PersonRepository personRepository;
-    private  final PersonMapper personMapper;
+    private  final PersonRequestMapper personRequestMapper;
+    private final PersonResponseMapper personResponseMapper;
 
-    public PersonServiceImpl(PersonRepository personRepository, PersonMapper personMapper ) {
+    public PersonServiceImpl(PersonRepository personRepository, PersonRequestMapper personRequestMapper, PersonResponseMapper personResponseMapper) {
         this.personRepository = personRepository;
-        this.personMapper = personMapper;
+
+        this.personRequestMapper = personRequestMapper;
+        this.personResponseMapper = personResponseMapper;
     }
 
     @Override
     public PersonResponse create(PersonRequest personRequest) throws Exception {
-        Person person = personRepository.save(personMapper.mapToPerson(personRequest));
-        PersonResponse personResponse = personMapper.mapToResponse(person);
+        Person person = personRepository.save(personRequestMapper.targetToSource(personRequest));
+        PersonResponse personResponse = personResponseMapper.sourceToTarget(person);
         return personResponse;
     }
 
     @Override
     public List<PersonResponse> findAll() {
-        return personMapper.mapToResponses( personRepository.findAll());
+    return null;
+
     }
 
     @Override

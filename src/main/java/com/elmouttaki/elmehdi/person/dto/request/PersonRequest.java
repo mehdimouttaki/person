@@ -25,4 +25,6 @@ public class PersonRequest {
     private String familySituation;
 
     private Role role ;
+
+    private Boolean active ;
 }
