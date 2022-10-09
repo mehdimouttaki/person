@@ -1,6 +1,5 @@
-package com.elmouttaki.elmehdi.person.Model;
+package com.elmouttaki.elmehdi.person.model;
 
-import com.elmouttaki.elmehdi.person.Enum.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,22 +16,10 @@ import java.io.Serializable;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Person implements Serializable {
+public class Student extends Person implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
+    private Long id;
 
-    private String firstName;
 
-    private  String lastName;
-
-    private String username ;
-
-    private String password;
-
-    private Integer age ;
-
-    private String familySituation;
-
-    private Role role ;
 }

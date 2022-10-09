@@ -1,4 +1,4 @@
-package com.elmouttaki.elmehdi.person.Dto.Response;
+package com.elmouttaki.elmehdi.person.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

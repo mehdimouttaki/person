@@ -1,4 +1,4 @@
-package com.elmouttaki.elmehdi.person.Utils;
+package com.elmouttaki.elmehdi.person.utils;
 
 import java.util.List;
 

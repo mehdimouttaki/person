@@ -1,16 +1,18 @@
-package com.elmouttaki.elmehdi.person.Controller;
+package com.elmouttaki.elmehdi.person.controller;
 
-import com.elmouttaki.elmehdi.person.Dto.Request.PersonRequest;
-import com.elmouttaki.elmehdi.person.Dto.Response.PersonResponse;
-import com.elmouttaki.elmehdi.person.Model.Person;
-import com.elmouttaki.elmehdi.person.Service.PersonService;
+import com.elmouttaki.elmehdi.person.dto.request.PersonRequest;
+import com.elmouttaki.elmehdi.person.dto.response.PersonResponse;
+import com.elmouttaki.elmehdi.person.model.Person;
+import com.elmouttaki.elmehdi.person.service.PersonService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(path = "/api/person")
 public class PersonController {
+
     private final PersonService personService;
 
 
@@ -24,9 +26,9 @@ public class PersonController {
         return personService.create(personRequest);
     }
 
-    @GetMapping("/all")
-    public PersonResponse findAll() {
-        return personService.findAll();
+    @GetMapping("/api/person/all")
+    public ResponseEntity<List<PersonResponse>> findAll() {
+        return ResponseEntity.ok(personService.findAll());
     }
 
     @GetMapping("{idPerson}")
