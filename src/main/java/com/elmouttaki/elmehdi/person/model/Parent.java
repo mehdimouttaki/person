@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -13,9 +13,31 @@ import java.io.Serializable;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Parent extends Person implements Serializable {
+public class Parent implements Serializable {
 
-    private  Long id ;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id ;
+
+    private String firstName;
+
+    private  String lastName;
+
+    private String username ;
+
+    private String password;
+
+    private Integer age ;
+
+    private String cin;
+
+    private String familySituation;
+
+    private Role role ;
+
+    private Boolean active;
+
+
 
 
 }

@@ -8,15 +8,35 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
+@Entity(name = "admin")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Admin extends Person implements Serializable {
+public class Admin implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id ;
+
+    private String firstName;
+
+    private  String lastName;
+
+    private String username ;
+
+    private String password;
+
+    private Integer age ;
+
+    private String cin;
+
+
+    private String familySituation;
+
+    private Role role ;
+
+    private Boolean active;
+
 
 
 }

@@ -1,22 +1,23 @@
-package com.elmouttaki.elmehdi.person.model;
+package com.elmouttaki.elmehdi.person.dto.response;
 
+import com.elmouttaki.elmehdi.person.model.Person;
+import com.elmouttaki.elmehdi.person.model.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
-import java.io.Serializable;
+import javax.persistence.ManyToOne;
 
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Student  implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
+
+
+public class TeacherResponse {
+
+    private Long id;
 
     private String firstName;
 
@@ -28,14 +29,12 @@ public class Student  implements Serializable {
 
     private Integer age ;
 
+    private String cin;
 
     private String familySituation;
 
     private Role role ;
 
+
     private Boolean active;
-
-
-
-
 }
