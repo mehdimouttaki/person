@@ -1,5 +1,6 @@
 package com.elmouttaki.elmehdi.person.model;
 
+import com.elmouttaki.elmehdi.person.controller.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

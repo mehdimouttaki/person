@@ -1,14 +1,10 @@
 package com.elmouttaki.elmehdi.person.dto.request;
 
-import com.elmouttaki.elmehdi.person.model.Person;
-import com.elmouttaki.elmehdi.person.model.Role;
-import com.elmouttaki.elmehdi.person.model.Teacher;
+import com.elmouttaki.elmehdi.person.controller.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import javax.persistence.ManyToOne;
 
 @Getter
 @Setter

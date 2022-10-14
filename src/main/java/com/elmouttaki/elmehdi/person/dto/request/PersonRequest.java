@@ -1,6 +1,6 @@
 package com.elmouttaki.elmehdi.person.dto.request;
 
-import com.elmouttaki.elmehdi.person.model.Role;
+import com.elmouttaki.elmehdi.person.controller.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

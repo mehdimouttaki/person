@@ -1,4 +1,4 @@
-package com.elmouttaki.elmehdi.person.model;
+package com.elmouttaki.elmehdi.person.controller.enums;
 
 public enum Role {
     PARENT,

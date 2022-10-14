@@ -1,7 +1,7 @@
 package com.elmouttaki.elmehdi.person.controller;
 
 import com.elmouttaki.elmehdi.person.model.Admin;
-import com.elmouttaki.elmehdi.person.model.Role;
+import com.elmouttaki.elmehdi.person.controller.enums.Role;
 import com.elmouttaki.elmehdi.person.service.AdminService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
