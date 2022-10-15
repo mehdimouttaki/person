@@ -1,6 +1,6 @@
 package com.elmouttaki.elmehdi.person.utils;
 
-import com.elmouttaki.elmehdi.person.controller.enums.CriteriaOperator;
+import com.elmouttaki.elmehdi.person.enums.CriteriaOperator;
 
 public class SearchRequest {
     private String field;

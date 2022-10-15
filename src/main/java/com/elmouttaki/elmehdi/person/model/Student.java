@@ -1,6 +1,6 @@
 package com.elmouttaki.elmehdi.person.model;
 
-import com.elmouttaki.elmehdi.person.controller.enums.Role;
+import com.elmouttaki.elmehdi.person.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -30,7 +30,9 @@ public class Student  implements Serializable {
     private Integer age ;
 
 
-    private String familySituation;
+    private String numberStudent;
+
+    private String academicLevel;
 
     private Role role ;
 

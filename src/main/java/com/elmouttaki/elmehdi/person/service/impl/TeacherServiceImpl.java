@@ -1,6 +1,6 @@
 package com.elmouttaki.elmehdi.person.service.impl;
 
-import com.elmouttaki.elmehdi.person.controller.enums.SchoolCommonBusinessError;
+import com.elmouttaki.elmehdi.person.enums.SchoolCommonBusinessError;
 import com.elmouttaki.elmehdi.person.dto.request.TeacherRequest;
 import com.elmouttaki.elmehdi.person.dto.response.TeacherResponse;
 import com.elmouttaki.elmehdi.person.exception.SchoolBusinessException;

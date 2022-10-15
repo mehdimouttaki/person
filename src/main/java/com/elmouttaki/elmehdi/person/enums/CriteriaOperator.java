@@ -1,4 +1,4 @@
-package com.elmouttaki.elmehdi.person.controller.enums;
+package com.elmouttaki.elmehdi.person.enums;
 
 import com.elmouttaki.elmehdi.person.exception.SchoolEnum;
 

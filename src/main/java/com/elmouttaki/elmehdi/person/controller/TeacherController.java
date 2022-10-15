@@ -1,6 +1,6 @@
 package com.elmouttaki.elmehdi.person.controller;
 
-import com.elmouttaki.elmehdi.person.controller.enums.SchoolCodeRsp;
+import com.elmouttaki.elmehdi.person.enums.SchoolCodeRsp;
 import com.elmouttaki.elmehdi.person.dto.request.TeacherRequest;
 import com.elmouttaki.elmehdi.person.dto.response.TeacherResponse;
 import com.elmouttaki.elmehdi.person.service.TeacherService;

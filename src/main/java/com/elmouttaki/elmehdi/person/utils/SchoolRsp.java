@@ -1,6 +1,6 @@
 package com.elmouttaki.elmehdi.person.utils;
 
-import com.elmouttaki.elmehdi.person.controller.enums.SchoolCodeRsp;
+import com.elmouttaki.elmehdi.person.enums.SchoolCodeRsp;
 import com.elmouttaki.elmehdi.person.exception.SchoolError;
 import com.elmouttaki.elmehdi.person.exception.SchoolErrorEnum;
 
