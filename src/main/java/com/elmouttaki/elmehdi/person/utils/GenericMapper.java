@@ -1,7 +1,11 @@
 package com.elmouttaki.elmehdi.person.utils;
 
+import org.mapstruct.Mapper;
+import org.mapstruct.MapperConfig;
+
 import java.util.List;
 
+@MapperConfig
 public interface GenericMapper <S, T> {
 
     T sourceToTarget(S source) throws Exception, IllegalAccessException;

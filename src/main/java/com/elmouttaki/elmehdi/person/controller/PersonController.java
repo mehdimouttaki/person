@@ -27,7 +27,7 @@ public class PersonController {
         return personService.create(personRequest);
     }
 
-    @GetMapping("/api/person/all")
+    @GetMapping("/all")
     public ResponseEntity<List<PersonResponse>> findAll() {
         return ResponseEntity.ok(personService.findAll());
     }
