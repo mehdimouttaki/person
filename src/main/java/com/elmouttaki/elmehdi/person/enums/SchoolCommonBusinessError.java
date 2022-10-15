@@ -4,7 +4,9 @@ import com.elmouttaki.elmehdi.person.exception.SchoolErrorEnum;
 
 public enum SchoolCommonBusinessError implements SchoolErrorEnum {
 
-    SCBE00001SCHOOL_COMMON_BUSINESS_ERROR("TEACHER_NOT_FOUND", "There is no teacher with the id");
+    SCBE00001SCHOOL_COMMON_BUSINESS_ERROR("TEACHER_NOT_FOUND", "There is no teacher with the id"),
+    SCBE00002SCHOOL_COMMON_BUSINESS_ERROR("STUDENT_NOT_FOUND", "There is no student with the id");
+
 
     SchoolCommonBusinessError(String teacher_not_found, String s) {
     }
