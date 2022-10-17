@@ -1,4 +1,4 @@
-package com.elmouttaki.elmehdi.person.model;
+package com.elmouttaki.elmehdi.person.dto.request;
 
 import com.elmouttaki.elmehdi.person.enums.Role;
 import lombok.AllArgsConstructor;
@@ -6,18 +6,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
-import java.io.Serializable;
-@Entity(name = "employees")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Employees implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
-
+public class EmployeeRequest {
     private String firstName;
 
     private  String lastName;
@@ -36,6 +29,5 @@ public class Employees implements Serializable {
 
     private Role role ;
 
-    private Boolean active;
-
+    private Boolean active ;
 }
